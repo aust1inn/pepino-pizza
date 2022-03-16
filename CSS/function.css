@@ -40,3 +40,13 @@ body {
     text-align: center;
     margin-left: 43%;
 }
+
+/* place order */
+
+.order {
+    background-color: white;
+    color: black;
+    height: 50vh;
+    width: 30%;
+    margin: 5%;
+}
