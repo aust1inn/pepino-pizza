@@ -46,9 +46,10 @@ body {
 .order {
     background-color: white;
     color: black;
-    height: 50vh;
+    height: 60vh;
     width: 30%;
     margin: 5%;
+    margin-top: 1%;
     font-family: 'Patrick Hand', cursive;
 }
 .order h6 {
@@ -56,4 +57,7 @@ body {
 }
 .size , .crust , .toppings {
     padding: 15px;
+}
+.order button {
+    margin-left: 35%;
 }
