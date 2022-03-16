@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Smooch+Sans:wght@100&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +14,13 @@ body {
     color: white;
 }
 
+/* header brand */
 .tagline {
     text-align: center;
-    font-size: larger;
+    font-size: xx-large;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-weight: bolder;
+    color: white;
 }
 
 /* navbar styling */
@@ -24,8 +30,13 @@ body {
     opacity: 0.5;
     color: white;
     height: 15vh;
-    margin-top: 4%;
+    text-align: center;
 }
 .nav-link , .navbar-brand {
     color: white;
+    font-size: larger;
+}
+.navbar-nav {
+    text-align: center;
+    margin-left: 43%;
 }
