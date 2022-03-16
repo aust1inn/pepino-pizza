@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Smooch+Sans:wght@100&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,4 +11,32 @@ body {
     background-image: url("../IMG/pizzabackground1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
+}
+
+/* header brand */
+.tagline {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+/* navbar styling */
+
+.navbar {
+    background-color: rgb(63, 68, 92);
+    opacity: 0.5;
+    color: white;
+    height: 15vh;
+    text-align: center;
+}
+.nav-link , .navbar-brand {
+    color: white;
+    font-size: larger;
+}
+.navbar-nav {
+    text-align: center;
+    margin-left: 43%;
 }
