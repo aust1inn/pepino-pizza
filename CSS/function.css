@@ -10,16 +10,3 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* navbar styling */
-
-.navbar {
-    background-color: rgb(63, 68, 92);
-    opacity: 0.5;
-    color: white;
-    height: 15vh;
-    margin-top: 10%;
-}
-.nav-link , .navbar-brand {
-    color: white;
-}
