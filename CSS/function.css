@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Smooch+Sans:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -49,4 +49,11 @@ body {
     height: 50vh;
     width: 30%;
     margin: 5%;
+    font-family: 'Patrick Hand', cursive;
+}
+.order h6 {
+    margin-left: 35%;
+}
+.size , .crust , .toppings {
+    padding: 15px;
 }
