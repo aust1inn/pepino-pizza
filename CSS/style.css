@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("../IMG/pizzabackground1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
