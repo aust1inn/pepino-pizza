@@ -4,12 +4,12 @@ function Pizza (size ,crust) {
     this.toppings = []
 };
 
+ 
 // user logic
 
 $(document).ready(function(){
 
     $("#order-btn").click(function(){
-
 
         let pizzaSize= $("#pizza-size").val();
         let pizzaCrust= $("#crust").val();
@@ -23,16 +23,18 @@ $(document).ready(function(){
         myPizza.toppings=pizzaToppings
 
         // size pricing
-        //     let sizePrice = 0
-        // if (myPizza.size=small) {
-        //     let sizePrice = 300
-        // }
-        // else if (myPizza.size=medium) {
-        //     let sizePrice = 600
-        // }
-        // else if (myPizza.size=large) {
-        //     let sizePrice = 900
-        // }
+        let totalPrice = 0
+        if (myPizza.size=="small") {
+            totalPrice +=300
+        }
+        else if (myPizza.size=="medium") {
+            totalPrice +=600
+        }
+        else if (myPizza.size=="large") {
+            totalPrice +=900
+        }
+
+        alert(totalPrice)
 
         $("#my-orders").append(
             "<tr>" +
@@ -45,9 +47,9 @@ $(document).ready(function(){
             "<td>" +
             myPizza.toppings +
             "</td>"+
-            // "<td>"+
-            // sizePrice +
-            // "</td>" +
+            "<td>"+
+            totalPrice +
+            "</td>" +
             "</tr>"
         );
     });
