@@ -50,10 +50,10 @@
           <!-- size select -->
           <div class="size">
               Select size of pizza
-              <select class="form-select" aria-label="Default select example">
-                  <option value="1">Small ksh300</option>
-                  <option value="2">Medium ksh600</option>
-                  <option value="3">Large ksh900</option>
+              <select class="form-select" id="pizza-size" aria-label="Default select example">
+                  <option value="small">Small ksh300</option>
+                  <option value="medium">Medium ksh600</option>
+                  <option value="large">Large ksh900</option>
                 </select>
           </div>
          
@@ -61,10 +61,10 @@
             <!-- crust select -->
           <div class="crust">
               Select crust
-              <select class="form-select" aria-label="Default select example">
-                  <option value="1">Crispy ksh 100</option>
-                  <option value="2">Stuffed ksh 150</option>
-                  <option value="3">Glutten-free ksh 200</option>
+              <select class="form-select" id="crust" aria-label="Default select example">
+                  <option value="crispy">Crispy ksh 100</option>
+                  <option value="stuffed">Stuffed ksh 150</option>
+                  <option value="glutten-free">Glutten-free ksh 200</option>
                 </select>
       
           </div>
@@ -72,28 +72,28 @@
             <!-- toppings select -->
           <div class="toppings">
               Toppings
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <div class="form-check" >
+                  <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
                     Pepperoni 
                   </label>
                 </div>
       
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input class="form-check-input" type="checkbox" name="toppings" value="cheese" id="flexCheckChecked" checked>
                   <label class="form-check-label" for="flexCheckChecked">
                     Extra cheese 
                   </label>
                 </div>
       
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input class="form-check-input" type="checkbox" name="toppings" value="onions" id="flexCheckChecked" checked>
                   <label class="form-check-label" for="flexCheckChecked">
                     Onions 
                   </label>
                 </div>
           </div>
-          <button type="button" class="btn btn-dark">Order</button
+          <button type="button" id="order-btn" class="btn btn-dark">Order</button
         </div>
       </div>
   
