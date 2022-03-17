@@ -43,56 +43,99 @@
       </nav>
 
       <!-- order placement -->
-
-      <div class="order">
-        <h6>Place your order</h6>
-        <!-- size select -->
-        <div class="size">
-            Select size of pizza
-            <select class="form-select" aria-label="Default select example">
-                <option value="1">Small ksh300</option>
-                <option value="2">Medium ksh600</option>
-                <option value="3">Large ksh900</option>
-              </select>
-        </div>
-       
-
-          <!-- crust select -->
-        <div class="crust">
-            Select crust
-            <select class="form-select" aria-label="Default select example">
-                <option value="1">Crispy ksh 100</option>
-                <option value="2">Stuffed ksh 150</option>
-                <option value="3">Glutten-free ksh 200</option>
-              </select>
-    
-        </div>
-          
-          <!-- toppings select -->
-        <div class="toppings">
-            Toppings
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Pepperoni ksh 200
-                </label>
-              </div>
-    
+      <div class="block1">
+        
+        <div class="order">
+          <h6>Place your order</h6>
+          <!-- size select -->
+          <div class="size">
+              Select size of pizza
+              <select class="form-select" aria-label="Default select example">
+                  <option value="1">Small ksh300</option>
+                  <option value="2">Medium ksh600</option>
+                  <option value="3">Large ksh900</option>
+                </select>
+          </div>
+         
+  
+            <!-- crust select -->
+          <div class="crust">
+              Select crust
+              <select class="form-select" aria-label="Default select example">
+                  <option value="1">Crispy ksh 100</option>
+                  <option value="2">Stuffed ksh 150</option>
+                  <option value="3">Glutten-free ksh 200</option>
+                </select>
+      
+          </div>
+            
+            <!-- toppings select -->
+          <div class="toppings">
+              Toppings
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                  Extra cheese ksh 150
-                </label>
-              </div>
-    
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                  Onions ksh 100
-                </label>
-              </div>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Pepperoni ksh 200
+                  </label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Extra cheese ksh 150
+                  </label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Onions ksh 100
+                  </label>
+                </div>
+          </div>
+          <button type="button" class="btn btn-dark">Order</button
         </div>
-        <button type="button" class="btn btn-dark">Order</button
       </div>
+  
+      <!-- cart -->
+        
+        <div class="card mt-1 mycart">
+          <div class="card-title d-inline-flex">
+              <h3 class="p-4">View items in cart</h3>
+              <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
+                      value="0" id="quantity">
+                      0
+                  </button></i>
+          </div>
+          <div class="card-body">
+              <table id="table">
+                  <tr>
+                      <td>Size</td>
+                      <td>Crust</td>
+                      <td>Toppings</td>
+                      <td>Total Price</td>
+                  </tr>
+              </table>
+  
+              <div id="cart">
+                  <img id="cart" src="img/shopping cart.png" alt="" />
+                  <p class="text-center pt-4">
+                      You do not have any item in the cart
+                  </p>
+              </div>
+  
+              <div id="items"></div>
+              <a href="#order-section">
+                  <div class="checkout">
+                      <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                          Checkout
+                      </button>
+                  </div>
+              </a>
+              <!-- </a> -->
+          </div>
+        </div>
+      </div>
+     
   </body>
 </html>

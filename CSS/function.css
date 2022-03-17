@@ -49,15 +49,29 @@ body {
     height: 60vh;
     width: 30%;
     margin: 5%;
-    margin-top: 1%;
+    margin-top: 0;
     font-family: 'Patrick Hand', cursive;
 }
 .order h6 {
     margin-left: 35%;
 }
 .size , .crust , .toppings {
-    padding: 15px;
+    padding: 10px;
 }
 .order button {
     margin-left: 35%;
+}
+
+/* cart */
+
+.mycart {
+    height: 60vh;
+    width: 30%;
+    font-family: 'Patrick Hand', cursive;
+    border-radius: 0%;
+
+}
+.block1 {
+    display: flex;
+    margin-top: 2%;
 }
