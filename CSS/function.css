@@ -69,9 +69,18 @@ body {
     width: 30%;
     font-family: 'Patrick Hand', cursive;
     border-radius: 0%;
+    color: black;
 
 }
 .block1 {
     display: flex;
     margin-top: 2%;
+}
+
+.btn {
+    background-color: black;
+}
+
+th , td {
+    padding: 10px;
 }
