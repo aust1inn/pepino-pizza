@@ -4,6 +4,26 @@ function Pizza (size ,crust) {
     this.toppings = []
 };
 
+let toppingsPrice = [{
+    pepperoni:{
+        small:50,
+        medium:75,
+        large:100
+    },
+    cheese:{
+        small:75,
+        medium:100,
+        large:125
+    },
+    onion:{
+        small:25,
+        medium:50,
+        large:75
+    }
+
+}
+    
+]
  
 // user logic
 
@@ -23,18 +43,31 @@ $(document).ready(function(){
         myPizza.toppings=pizzaToppings
 
         // size pricing
-        let totalPrice = 0
+        let sizePrice = 0
         if (myPizza.size=="small") {
-            totalPrice +=300
+            sizePrice +=300
         }
         else if (myPizza.size=="medium") {
-            totalPrice +=600
+            sizePrice +=600
         }
         else if (myPizza.size=="large") {
-            totalPrice +=900
+            sizePrice +=900
         }
 
-        alert(totalPrice)
+        // crust pricing
+        let crustPrice = 0
+        if (myPizza.crust=="crispy") {
+            crustPrice +=100
+        }
+        else if (myPizza.crust=="stuffed") {
+            crustPrice +=150
+        }
+        else if (myPizza.crust=="glutten-free") {
+            crustPrice +=200
+        }
+
+
+        let totalPrice = crustPrice + sizePrice
 
         $("#my-orders").append(
             "<tr>" +
