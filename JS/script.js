@@ -1,11 +1,6 @@
-function Pizza (small , medium , large) {
-    this.small = small
-    this.medium = medium
-    this.large = large
+function Pizza (size ,crust) {
+    this.size = size
+    this.crust = crust
+    this.toppings = []
 };
 
-function Crust (crispy , stuffed , gluttenFree) {
-    this.crispy =crispy
-    this.stuffed =stuffed
-    this.gluttenFree =gluttenFree
-}
