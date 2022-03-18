@@ -107,7 +107,7 @@
                       <td>Size</td>
                       <td>Crust</td>
                       <td>Toppings</td>
-                      <td>Total Price</td>
+                      <td>Price</td>
                   </tr>
               </table>
   
@@ -115,14 +115,25 @@
               <div id="my-orders"></div>
               <div id="total"></div>
 
+              Want it delivered?
+              <select class="form-select" id="deliver" aria-label="Default select example">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+
+              location
+              <input type="text"  id="location" class="form-control">
+              Delivery fee is ksh 250 only
+
               <a href="#order-section">
                   <div class="checkout">
-                      <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                      <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="checkout">
                           Checkout
                       </button>
                   </div>
               </a>
-              
+             <div class="result1"></div>
+             <div class="result2"></div>
           </div>
         </div>
       </div>

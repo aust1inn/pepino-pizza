@@ -114,8 +114,25 @@ $(document).ready(function(){
               grand +=price
           });
 
-        $("#total").text("Grand Total: Ksh" +grand)
+        $("#total").text(" Total: Ksh" +grand)
+
+        $("#checkout").click(function(){
+        
+            let deliveryStatus = $("#deliver").val();
+            let myLocation = $("#location").val();
+            let myPay = 250;
+
+            if (deliveryStatus=="yes") {
+                myPay +=grand
+                $(".result1").append("Your pay is Ksh" +myPay)
+                $(".result2").append(`Your order will be delivered to ${myLocation} Thank you for shopping with pepino`)
+
+            }
+        });
 
     });
 });
+
+// checkout
+
 
