@@ -86,3 +86,7 @@ th , td {
 #total {
     margin-left: 50%;
 }
+.result1 , .result2 {
+    font-size: larger;
+    font-weight: bolder;
+}

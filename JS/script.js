@@ -122,10 +122,18 @@ $(document).ready(function(){
             let myLocation = $("#location").val();
             let myPay = 250;
 
+            $("#deliver").hide();
+            $("#location").hide();
+
             if (deliveryStatus=="yes") {
                 myPay +=grand
-                $(".result1").append("Your pay is Ksh" +myPay)
-                $(".result2").append(`Your order will be delivered to ${myLocation} Thank you for shopping with pepino`)
+                $(".result1").text("Your pay is Ksh" +myPay)
+                $(".result2").text(`Your order will be delivered to ${myLocation} Thank you for shopping with pepino`)
+
+            }
+            else {
+                $(".result1").text("Your pay is Ksh" +grand)
+                $(".result2").text("Thank you for shopping with pepino")
 
             }
         });
