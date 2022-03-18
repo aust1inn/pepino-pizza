@@ -108,7 +108,7 @@ $(document).ready(function(){
         }
 
 
-        let totalPrice = crustPrice + sizePrice
+        let totalPrice = crustPrice + sizePrice + toppingsPrice
 
         $("#my-orders").append(
             "<tr>" +
