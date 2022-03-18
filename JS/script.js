@@ -50,13 +50,13 @@ $(document).ready(function(){
             let toppingsPrice = 0
         myPizza.toppings.forEach(element => {
             if (element=="pepperoni" && myPizza.size=="small") {
-                toppingsPrice +=50
+                toppingsPrice +=100
             }
             else if (element=="pepperoni" && myPizza.size=="medium") {
-                toppingsPrice +=75
+                toppingsPrice +=150
             }
             else if (element=="pepperoni" && myPizza.size=="large") {
-                toppingsPrice +=100
+                toppingsPrice +=200
             }
     
             else if (element=="cheese" && myPizza.size=="small") {
@@ -70,29 +70,28 @@ $(document).ready(function(){
             }
     
             else if (element=="onions" && myPizza.size=="small") {
-                toppingsPrice +=25
-            }
-            else if (element=="onions" && myPizza.size=="medium") {
                 toppingsPrice +=50
             }
-            else if (element=="onions" && myPizza.size=="large") {
+            else if (element=="onions" && myPizza.size=="medium") {
                 toppingsPrice +=75
+            }
+            else if (element=="onions" && myPizza.size=="large") {
+                toppingsPrice +=100
             }
             
         });    
 
-       alert(toppingsPrice)
 
         // size pricing
         let sizePrice = 0
         if (myPizza.size=="small") {
-            sizePrice +=300
+            sizePrice +=500
         }
         else if (myPizza.size=="medium") {
-            sizePrice +=600
+            sizePrice +=850
         }
         else if (myPizza.size=="large") {
-            sizePrice +=900
+            sizePrice +=1300
         }
 
         // crust pricing
