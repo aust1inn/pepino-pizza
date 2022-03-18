@@ -4,26 +4,30 @@ function Pizza (size ,crust) {
     this.toppings = []
 };
 
-let toppingsPrice = [{
-    pepperoni:{
-        small:50,
-        medium:75,
-        large:100
-    },
-    cheese:{
-        small:75,
-        medium:100,
-        large:125
-    },
-    onion:{
-        small:25,
-        medium:50,
-        large:75
-    }
+// let toppingsPrices = [{
+//     pepperoni:{
+//         small:50,
+//         medium:75,
+//         large:100
+//     },
+//     cheese:{
+//         small:75,
+//         medium:100,
+//         large:125
+//     },
+//     onion:{
+//         small:25,
+//         medium:50,
+//         large:75
+//     }
 
-}
-    
-]
+// }
+// ];
+
+
+// toppingsPrices.forEach(toppingsPrice => {
+//     alert(toppingsPrice.pepperoni)
+// });
  
 // user logic
 
@@ -31,16 +35,53 @@ $(document).ready(function(){
 
     $("#order-btn").click(function(){
 
+       
         let pizzaSize= $("#pizza-size").val();
         let pizzaCrust= $("#crust").val();
-        let pizzaToppings = new Array ();
-        
-        $('input[name="toppings"]:checked').each(function() {
-            pizzaToppings.push(this.value);
-            });
 
         let myPizza = new Pizza (pizzaSize ,pizzaCrust)
-        myPizza.toppings=pizzaToppings
+
+        
+        $('input[name="toppings"]:checked').each(function() {
+            myPizza.toppings.push(this.value);
+            });
+
+            // toppings pricing
+            let toppingsPrice = 0
+        myPizza.toppings.forEach(element => {
+            if (element=="pepperoni" && myPizza.size=="small") {
+                toppingsPrice +=50
+            }
+            else if (element=="pepperoni" && myPizza.size=="medium") {
+                toppingsPrice +=75
+            }
+            else if (element=="pepperoni" && myPizza.size=="large") {
+                toppingsPrice +=100
+            }
+    
+            else if (element=="cheese" && myPizza.size=="small") {
+                toppingsPrice +=75
+            }
+            else if (element=="cheese" && myPizza.size=="medium") {
+                toppingsPrice +=100
+            }
+            else if (element=="cheese" && myPizza.size=="large") {
+                toppingsPrice +=125
+            }
+    
+            else if (element=="onions" && myPizza.size=="small") {
+                toppingsPrice +=25
+            }
+            else if (element=="onions" && myPizza.size=="medium") {
+                toppingsPrice +=50
+            }
+            else if (element=="onions" && myPizza.size=="large") {
+                toppingsPrice +=75
+            }
+            
+        });    
+
+       alert(toppingsPrice)
 
         // size pricing
         let sizePrice = 0
