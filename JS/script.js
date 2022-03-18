@@ -4,36 +4,14 @@ function Pizza (size ,crust) {
     this.toppings = []
 };
 
-// let toppingsPrices = [{
-//     pepperoni:{
-//         small:50,
-//         medium:75,
-//         large:100
-//     },
-//     cheese:{
-//         small:75,
-//         medium:100,
-//         large:125
-//     },
-//     onion:{
-//         small:25,
-//         medium:50,
-//         large:75
-//     }
 
-// }
-// ];
-
-
-// toppingsPrices.forEach(toppingsPrice => {
-//     alert(toppingsPrice.pepperoni)
-// });
  
 // user logic
 
 $(document).ready(function(){
 
     $("#order-btn").click(function(){
+        $("#order-btn").text("Another order");
 
        
         let pizzaSize= $("#pizza-size").val();
@@ -104,7 +82,7 @@ $(document).ready(function(){
         }
         else if (myPizza.crust=="glutten-free") {
             crustPrice +=200
-        }
+        };
 
 
         let totalPrice = crustPrice + sizePrice + toppingsPrice
@@ -120,11 +98,24 @@ $(document).ready(function(){
             "<td>" +
             myPizza.toppings +
             "</td>"+
-            "<td>"+
+            "<td class=price>"+
             totalPrice +
             "</td>" +
             "</tr>"
         );
+        let prices = [];
+        let grand = 0
+        $(".price").each(function(){
+            prices.push(parseInt($(this).text()))
+          });
+        //   alert(prices)
+
+        prices.forEach(price => {
+              grand +=price
+          });
+
+        $("#total").text("Grand Total: Ksh" +grand)
+
     });
 });
 

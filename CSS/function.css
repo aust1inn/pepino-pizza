@@ -83,3 +83,6 @@ body {
 th , td {
     padding: 10px;
 }
+#total {
+    margin-left: 50%;
+}
