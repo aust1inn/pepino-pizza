@@ -119,13 +119,13 @@ $(document).ready(function(){
         $("#checkout").click(function(){
         
             let deliveryStatus = $("#deliver").val();
-            let myLocation = $("#location").val();
             let myPay = 250;
 
             $("#deliver").hide();
             $("#location").hide();
 
             if (deliveryStatus=="yes") {
+              let myLocation=  prompt("Enter Location: ")
                 myPay +=grand
                 $(".result1").text("Your pay is Ksh" +myPay)
                 $(".result2").text(`Your order will be delivered to ${myLocation} Thank you for shopping with pepino`)
