@@ -90,3 +90,19 @@ th , td {
     font-size: larger;
     font-weight: bolder;
 }
+
+/* media queries */
+
+@media only screen and (max-width:850px){
+    .mycart {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .order{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .block1{
+        flex-direction: column;
+    }
+}
