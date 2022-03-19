@@ -27,8 +27,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
+https://aust1inn.github.io/pepino-pizza/
+  
 Pepino is an awesome online pizza shop where customers can order their favourite pizza and have them delivered
 at their doorstep. SUPER SPACIAL.....
 
