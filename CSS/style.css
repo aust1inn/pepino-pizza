@@ -59,3 +59,15 @@ body {
 .box h3 {
     margin-top: 5%;
 }
+
+/* media queries */
+
+@media only screen and (max-width:850px){
+    .box {
+        width: 70%;
+        margin-left: 15%;
+    }
+    body {
+        height: 100vh;
+    }
+}

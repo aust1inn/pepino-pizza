@@ -105,4 +105,7 @@ th , td {
     .block1{
         flex-direction: column;
     }
+    body {
+        height: 100vh;
+    }
 }
